@@ -8,6 +8,9 @@
 # elif height <120 :
 #     print("Sorry you cant Ride the roller coaster")
 
+
+
+
 # Odd pr even checker
 
 # print("Welcome to odd or even checker \n")
@@ -17,6 +20,9 @@
 #     print("This number is even")
 # else : 
 #     print("This number is odd")
+
+
+
 
 
 # Roller coaster with age and height checker
@@ -32,7 +38,17 @@
 #     else : 
 #         print("Please Pay $12")
 # else : 
-#     print("Sorry you cant Ride the roller coaster")  
+#     print("Sorry you cant Ride the roller coaster") 
+# 
+# 
+# 
+# 
+
+
+
+
+# 
+#  
 # 
 # BMI Calculator with Interpretations
 # Add some if/elif/else statements to the
@@ -47,18 +63,51 @@
 
 # If the bmi is 25 (including) or over, 
 # print out "overweight"
-#           
-print("Welcome to BMI Calculator \n")
-height=float(input("What is you Height in M ? \n"))
-weight=float(input("What is your weight in KG ? \n"))
-BMI=weight/height**2
-if BMI<18.5 :
-    print(f"Your BMI is {BMI} and you are underweight")
-elif BMI>=18.5 and BMI<25 :
-    print (f"Your BMI is {BMI} and you are normal Weight")
-# elif BMI >=25 :
+#       
+# 
+# 
+
+
+
+# print("Welcome to BMI Calculator \n")
+# height=float(input("What is you Height in M ? \n"))
+# weight=float(input("What is your weight in KG ? \n"))
+# BMI=weight/height**2
+# if BMI<18.5 :
+#     print(f"Your BMI is {BMI} and you are underweight")
+# elif BMI>=18.5 and BMI<25 :
+#     print (f"Your BMI is {BMI} and you are normal Weight")
+# # elif BMI >=25 :
+# else :
+#     print (f"Your BMI is {BMI} and you are overweight")
+
+
+# Roller Coaster with extra photos and bill checker
+
+print("Welcome to Roller Coaster Ride")
+height=float(input("What is your Height in CM ? \n"))
+if height > 120 :
+    age = float(input("What is your Age ? \n"))
+    if age <12 :
+      payable= 5
+      print("Pay $5 for Ride")
+    elif age >=12 and age <=18 :
+      payable = 7
+      print("Pay $7 for the Ride")
+    else :
+      payable = 12
+      print("Pay 12$ for the ride")
+    want_photos = input("Want photos for extra $3 ? Type yes or no ").lower()
+    if want_photos == "yes" :
+      payable += 3
+      print(f"Your Total bill is {payable}")
+    else :
+      print(f"Your total bill is {payable}")  
+    
+
 else :
-    print (f"Your BMI is {BMI} and you are overweight")
+  print ("You can not Ride")
 
 
-             
+
+
