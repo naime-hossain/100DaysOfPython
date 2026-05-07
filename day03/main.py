@@ -84,30 +84,49 @@
 
 # Roller Coaster with extra photos and bill checker
 
-print("Welcome to Roller Coaster Ride")
-height=float(input("What is your Height in CM ? \n"))
-if height > 120 :
-    age = float(input("What is your Age ? \n"))
-    if age <12 :
-      payable= 5
-      print("Pay $5 for Ride")
-    elif age >=12 and age <=18 :
-      payable = 7
-      print("Pay $7 for the Ride")
-    else :
-      payable = 12
-      print("Pay 12$ for the ride")
-    want_photos = input("Want photos for extra $3 ? Type yes or no ").lower()
-    if want_photos == "yes" :
-      payable += 3
-      print(f"Your Total bill is {payable}")
-    else :
-      print(f"Your total bill is {payable}")  
+# print("Welcome to Roller Coaster Ride")
+# height=float(input("What is your Height in CM ? \n"))
+# if height > 120 :
+#     age = float(input("What is your Age ? \n"))
+#     if age <12 :
+#       payable= 5
+#       print("Pay $5 for Ride")
+#     elif age >=12 and age <=18 :
+#       payable = 7
+#       print("Pay $7 for the Ride")
+#     else :
+#       payable = 12
+#       print("Pay 12$ for the ride")
+#     want_photos = input("Want photos for extra $3 ? Type yes or no ").lower()
+#     if want_photos == "yes" :
+#       payable += 3
+#       print(f"Your Total bill is {payable}")
+#     else :
+#       print(f"Your total bill is {payable}")  
     
 
-else :
-  print ("You can not Ride")
+# else :
+#   print ("You can not Ride")
 
+
+# pizza order place
+print("Welcome to Pizzarela")
+size = input("What size do You want ? S , M or L \n")
+peporoni =input("Do you want Peporoni ? Type Y or N \n")
+extra_cheese = input("Do you want Extra Cheese ? Type Y or N \n")
+pizza_price = 0
+if size == "S" :
+  pizza_price = 20
+elif size == "M" :
+  pizza_price = 25
+else :
+  pizza_price = 30
+if peporoni  == "Y" :
+  pizza_price += 2
+if extra_cheese == "Y" :
+  pizza_price += 3
+print(f"Your total bill is ${pizza_price} Thank you" )     
+ß
 
 
 
