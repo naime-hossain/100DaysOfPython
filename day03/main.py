@@ -110,25 +110,64 @@
 
 
 # pizza order place
-print("Welcome to Pizzarela")
-size = input("What size do You want ? S , M or L \n")
-peporoni =input("Do you want Peporoni ? Type Y or N \n")
-extra_cheese = input("Do you want Extra Cheese ? Type Y or N \n")
-pizza_price = 0
-if size == "S" :
-  pizza_price = 20
-elif size == "M" :
-  pizza_price = 25
+
+
+# print("Welcome to Pizzarela")
+# size = input("What size do You want ? S , M or L \n")
+# peporoni =input("Do you want Peporoni ? Type Y or N \n")
+# extra_cheese = input("Do you want Extra Cheese ? Type Y or N \n")
+# pizza_price = 0
+# if size == "S" :
+#   pizza_price = 20
+# elif size == "M" :
+#   pizza_price = 25
+# else :
+#   pizza_price = 30
+# if peporoni  == "Y" :
+#    if size == "S" :
+#      pizza_price += 2
+#    else :
+#      pizza_price += 3
+# if extra_cheese == "Y" :
+#   pizza_price += 1
+# print(f"Your total bill is ${pizza_price} Thank you" ) 
+# 
+# 
+# 
+#
+
+
+#Roller coaster with age,photos and midlife-crisis
+
+
+
+print("Welcome to roller coaster Ride")
+height=float(input("Enter your Height in CM : \n"))
+total_ride_price = 0
+if height > 120 :
+  #can ride block
+  age = int(input("What is your Age ? : \n"))
+  if age< 12 :
+    total_ride_price += 5
+  elif age <=12 and age < 18 :
+    total_ride_price += 7
+  elif age>=45 and  age <=55  :
+    total_ride_price = 0
+    print("You are in Midlife crisis and you dont need to pay anything ") 
+  else :
+    total_ride_price += 12
+  
+  want_photos = input("Want to take photo ? Type Y or N : \n")
+  if want_photos == "Y" :
+    total_ride_price += 3
+    print(f"You need to pay ${total_ride_price} for the ride . thanks ")
+  else :
+    print(f"You need to pay ${total_ride_price} for the ride . thanks ")  
+     
+        
+
 else :
-  pizza_price = 30
-if peporoni  == "Y" :
-   if size == "S" :
-     pizza_price += 2
-   else :
-     pizza_price += 3
-if extra_cheese == "Y" :
-  pizza_price += 1
-print(f"Your total bill is ${pizza_price} Thank you" )  
+  print("Sorry you cant Ride")
 
 
 
