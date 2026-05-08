@@ -122,11 +122,13 @@ elif size == "M" :
 else :
   pizza_price = 30
 if peporoni  == "Y" :
-  pizza_price += 2
+   if size == "S" :
+     pizza_price += 2
+   else :
+     pizza_price += 3
 if extra_cheese == "Y" :
-  pizza_price += 3
-print(f"Your total bill is ${pizza_price} Thank you" )     
-ß
+  pizza_price += 1
+print(f"Your total bill is ${pizza_price} Thank you" )  
 
 
 
