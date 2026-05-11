@@ -40,3 +40,23 @@ ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 ******************************************************************************* ''')
+
+
+print("Welcome to Treasure Island . Your Mission to find the treasure")
+left_or_right=input("Which direction you want to go ? for Left Type L and for Right Type R \n")
+if left_or_right == "L" :
+  swim_or_wait = input("Do you want Swim or Wait ? Type S or W \n")
+  if swim_or_wait == "W" :
+    which_door = input("Blue , Red or Yellow Door ? Type B or R or Y \n")
+    if which_door == "R":
+      print("Burned by fire . Game Over")
+    elif  which_door == "B" :
+      print("Eaten by beasts. Game Over")
+    elif which_door == "Y" :  
+      print("You win")
+    else :
+      print("Game Over")   
+  else :
+    print("Attack by Trout. Game Over")  
+else :
+  print("Fall into a hole . GAME Over")  
