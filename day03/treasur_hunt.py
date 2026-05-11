@@ -43,11 +43,11 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 
 print("Welcome to Treasure Island . Your Mission to find the treasure")
-left_or_right=input("Which direction you want to go ? for Left Type L and for Right Type R \n")
+left_or_right=input("Which direction you want to go ? for Left Type L and for Right Type R \n").lower()
 if left_or_right == "L" :
-  swim_or_wait = input("Do you want Swim or Wait ? Type S or W \n")
+  swim_or_wait =  input("Do you want Swim or Wait ? Type S or W \n").lower()
   if swim_or_wait == "W" :
-    which_door = input("Blue , Red or Yellow Door ? Type B or R or Y \n")
+    which_door = input("Blue , Red or Yellow Door ? Type B or R or Y \n").lower()
     if which_door == "R":
       print("Burned by fire . Game Over")
     elif  which_door == "B" :
