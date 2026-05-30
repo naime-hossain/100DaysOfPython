@@ -32,12 +32,12 @@ choices={"r":rock,"p":paper,"s":scissors}
 user_choice = input("what is your choice Rock, paper or scissor ? Type r,p or s ").lower()
 computer_choice = random.choice(list(choices.keys()))
 if user_choice == "r" :
-    print (f"User selected Rock : n\ {rock}")
+    print (f"User selected Rock : \n {rock}")
 elif user_choice == "p" :
-       print (f"User selected Paper : n\ {paper}")
+       print (f"User selected Paper : \n {paper}")
 else :
-      print (f"User selected scissors : n\ {scissors}") 
-print (f"Computer selected  : n\ {choices[computer_choice]}")             
+      print (f"User selected scissors : \n {scissors}") 
+print (f"Computer selected  : \n {choices[computer_choice]}")             
 
 # Rock crushes Scissors: Rock wins.
 # Scissors cuts Paper: Scissors win.
