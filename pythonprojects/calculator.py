@@ -16,4 +16,4 @@ elif operator == "/":
 else :
   print ("Please Type a valid Operator")      
 
-print(f"The result is {result}")
+print(f"The result is {round(result,3)}")
