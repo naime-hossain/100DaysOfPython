@@ -7,20 +7,31 @@ import random
 
 
 words=["python", "java", "javascript", "html", "css", "react", "angular", "nodejs", "django", "flask"]
-user_choice=input("choose a letter  to guess : \n").lower()
+
 random_word=random.choice(words)
 random_word=random_word.lower()
 random_word_array=list(random_word)
 
 print(random_word)
-
+dummy=""
 for i in random_word_array :
-    if user_choice == i :
-        print("Right")
-    else :
-        print("Wrong")    
+    dummy+="_"
+print(dummy)  
+display=""
+user_choice=input("choose a letter  to guess : \n").lower()
+for i in random_word_array :
 
-# if user_choice==random_word:
-#     print("You guessed the word correctly!")
-# else :
-#     print(f"Sorry, the correct word was '{random_word}'. Better luck next time!")
+    if user_choice == i :
+               
+               
+        # print("Right")
+               display+=i
+               
+        #
+    else :
+         display+="_"
+        # print("Wrong") 
+        #    
+print(f"Your guess is : {display}")
+
+
